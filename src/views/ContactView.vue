@@ -1,11 +1,11 @@
 <template>
     <section class="contact">
         <h2>Contact</h2>
-        <p2>Ricardo Rios</p2>
-        <p2>Phone: +1 (425) 238-8463</p2>
-        <p2>Email: rich.rios1990@gmail.com</p2>
-        <p2>LinkedIn: </p2>
-        <p2>GitHub: </p2>
+        <p>Ricardo Rios</p>
+        <p>Phone: +1 (425) 238-8463</p>
+        <p>Email: rich.rios1990@gmail.com</p>
+        <p>LinkedIn: </p>
+        <p>GitHub: </p>
     </section>
 </template>
 

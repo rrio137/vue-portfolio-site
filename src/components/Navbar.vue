@@ -1,22 +1,58 @@
 <template>
-    <nav>
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="projects">Projects</router-link>
-        <router-link to="resume">Resume</router-link>
-        <router-link to="contact">Contact</router-link>
+    <nav class="navbar">
+        <div class="nav-container">
+            <router-link to="/" class="logo">Ricardo Rios</router-link>
+            <div class="nav-links">
+                <router-link to="/" exact-active-class="active">Home</router-link>
+                <router-link to="/about" exact-active-class="active">About</router-link>
+                <router-link to="/projects" exact-active-class="active">Projects</router-link>
+                <router-link to="/resume" exact-active-class="active">Resume</router-link>
+                <router-link to="/contact" exact-active-class="active">Contact</router-link>
+            </div>
+        </div>
     </nav>
 </template>
 
+<script>
+export default {
+    name: "NavbarComponent",
+};
+</script>
+
 <style scoped>
-nav {
-    display: flex;
-    gap: 1rem;
+.navbar {
     background-color: #2c3e50;
     padding: 1rem;
 }
-a {
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
     color: white;
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links .active {
+    border-bottom: 2px solid #42b983;
+}
+
 </style>
