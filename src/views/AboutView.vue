@@ -10,8 +10,8 @@
             <p>In addition to my computer science degree I have degrees in philosophy (BA) and theology (MA).
                 I am recently married and live in the greater Seattle area of Washington state--go Mariners!
             </p>
-            <p>I'm interested in game development, full-stack development, and the uses and limitations of artificial intelligence.
-                I want to use my CS degree to exercise my creative side and I love it when a project comes together. Check out my Projects page
+            <p>I'm interested in game development, full-stack development, and web development.
+                I want to use my CS degree to exercise my creative side and I love it when a project comes together. Check out my <router-link to="/projects">Projects</router-link> page
                 to see the kinds of things I've worked on.
             </p>
         </div>
