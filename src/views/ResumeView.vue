@@ -1,7 +1,7 @@
 <template>
     <section class="resume">
         <h2>Resume</h2>
-        <p>You can find my resume here (download)</p>
+        <p>You can find my abbreviated resume below or <a href="/rios_resume 2.1.pdf" download>download a complete version here</a>.</p>
         <h3>Professional Profile</h3>
         <p>Recent Computer Science graduate with a strong foundation in full stack development, algorithms, and collaborative software projects. Proficient in Java, Python, and modern frameworks. Recognized for excellent research and writing skills, with a passion for creating intuitive solutions and learning new technologies. 
           A background in sales and customer service at USPS has equipped me for fast-paced, systems-oriented tasks, and I’m known as the go-to person for managers seeking high-quality work and a quick learner ready to take on new challenges.</p>
