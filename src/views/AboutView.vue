@@ -29,9 +29,9 @@ export default {
     max-width: 800px;
     margin: 4rem auto;
     padding: 2rem 3rem;
-    background: #a88080;
+    /* background: #a88080; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    color: #1a1919;
 }
 
 .about h2 {

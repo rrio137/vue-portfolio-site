@@ -1,7 +1,7 @@
 <template>
     <section class="resume">
         <h2>Resume</h2>
-        <p>You can view my resume below or download it:</p>
+        <p>You can view my abbreviated resume below or download it:</p>
         <a href="/Resume.pdf" download class="download-btn">Download Resume (PDF)</a>
 
         <h3>Professional Profile</h3>

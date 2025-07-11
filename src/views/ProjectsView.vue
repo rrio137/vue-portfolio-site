@@ -63,7 +63,7 @@ export default {
 .projects h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #a32f6f;
+  color: #764ba2;
 }
 
 .projects p {
