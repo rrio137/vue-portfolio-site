@@ -16,21 +16,21 @@ export default {
 </script>
 
 <style scoped>
-.resume {
+.contact {
   max-width: 800px;
   margin: 2rem auto;
   padding: 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  color: #a12d2d;
 }
 
-.resume h2 {
+.contact h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #764ba2;
+  color: #4ba261;
 }
 
-.resume p {
+.contact p {
   font-size: 1.1rem;
   line-height: 1.6;
 }

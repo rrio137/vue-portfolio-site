@@ -22,6 +22,9 @@
         <h3>Advanced A.I.</h3>
         <p>Using an open source Excel file containing 10,000 rows of bird migration data, I employed Pandas to read and convert the data into a CSV file and employed data preprocessing techniques such as one-hot encoding, binary encoding, and cleaning to generate a working dataset. I built a Random Forest Regressor model to determine the extent to which the selected features in the dataset could accurately predict successful bird migration. After testing and printing the results of the model, I employed machine learning optimization techniques to see if success could be fine-tuned.</p>
         <p>Link: <a href="https://gitlab.com/wgu-gitlab-environment/student-repos/rrio137/d683-advanced-ai-and-ml/-/tree/Working_Branch?ref_type=heads" target="_blank" rel="noopener noreferrer">GitLab Repository</a></p>
+        <h2>Other Stuff</h2>
+        <h3>Vue Project Personal Portfolio</h3>
+        <p>This website itself is a project I've built myself using a Vue front-end to get some practice now that I'm finished at WGU! Thanks for visiting.</p>
     </section>
 </template>
 
@@ -43,7 +46,7 @@ export default {
 .projects h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #764ba2;
+  color: #a32f6f;
 }
 
 .projects p {
