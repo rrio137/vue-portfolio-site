@@ -20,11 +20,13 @@
 </template>
 
 <script>
+import myPic from "@/assets/IMG_4124.jpg";
+
 export default {
     name: "AboutView",
     data() {
         return {
-            IMG_4124
+            IMG_4124: myPic
         };
     }
 };
