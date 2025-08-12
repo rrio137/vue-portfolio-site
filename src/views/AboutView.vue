@@ -3,7 +3,7 @@
         <h2>About Me</h2>
         <img :src="IMG_4124" alt="Ricardo Rios" class="profile-pic" />
         <div class="about-card">
-           <p>I'm Rich Rios, an aspiring developer passionate about building web apps using Vue, Java, and Python.
+           <p>I'm Rich Rios, an aspiring developer passionate about building web apps using Vue, Java, C++, C#, and Python.
             I enjoy crafting clean, maintainable code and learning new technologies.</p>
             <p>I graduated June 2025 with a degree in Computer Science from WGU,
                 and I am eaglerly looking for work opportunities. Thank you for visiting this page!
