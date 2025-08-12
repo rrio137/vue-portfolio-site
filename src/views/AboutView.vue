@@ -61,7 +61,7 @@ export default {
     font-weight: bold;
 }
 
-.profil-pic {
+.profile-pic {
     width: 150px;
     height: 150px;
     object-fit: cover;
