@@ -2,7 +2,7 @@
     <section class="resume">
         <h2>Resume</h2>
         <p>You can view my abbreviated resume below or download it:</p>
-        <a href="/Resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+        <a href="/rios_resume 3.0.pdf" download class="download-btn">Download Resume (PDF)</a>
 
         <h3>Professional Profile</h3>
         <p>Recent Computer Science graduate with a strong foundation in full stack development, algorithms, and collaborative software projects. 
