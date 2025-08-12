@@ -1,6 +1,7 @@
 <template>
     <section class="about">
         <h2>About Me</h2>
+        <img :src="IMG_4124" alt="Ricardo Rios" class="profile-pic" />
         <div class="about-card">
            <p>I'm Rich Rios, an aspiring developer passionate about building web apps using Vue, Java, and Python.
             I enjoy crafting clean, maintainable code and learning new technologies.</p>
@@ -21,6 +22,11 @@
 <script>
 export default {
     name: "AboutView",
+    data() {
+        return {
+            IMG_4124
+        };
+    }
 };
 </script>
 
@@ -51,5 +57,14 @@ export default {
     line-height: 1.8;
     margin-bottom: 1rem;
     font-weight: bold;
+}
+
+.profil-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4ba261;
+    margin-bottom: 1rem;
 }
 </style>
