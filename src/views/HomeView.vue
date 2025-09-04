@@ -16,16 +16,14 @@ export default {
 
 <style scoped>
 .home {
+  height: 100vh;
+  backround-image: url('@/assets/Rainier20200906.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 80vh;
-  text-align: center;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  justify-content: center;
   color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  margin: 2rem;
 }
 
 .intro h1 {
