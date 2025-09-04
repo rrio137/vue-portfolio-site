@@ -58,7 +58,6 @@ export default {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1rem;
-    font-weight: bold;
 }
 
 .profile-pic {
