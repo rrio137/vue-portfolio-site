@@ -107,6 +107,6 @@ export default {
 }
 
 .job-description {
-  font-size: 1
+  font-size: 0.5
 }
 </style>
