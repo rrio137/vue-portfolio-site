@@ -107,7 +107,7 @@ export default {
 }
 
 .job-description {
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   color: #555;
   margin-left: 1.5rem;
   margin-top: 0.25rem;
