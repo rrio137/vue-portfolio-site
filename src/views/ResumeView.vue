@@ -34,8 +34,11 @@
           <h3>Work Experience</h3>
           <ul>
             <li>Sales and Services Clerk | United States Post Office | Marysville, WA (May 2016 - November 2023)</li>
+            <p class="job-description">
+              At the Post Office I was required to have extensive knowledge of systems and products in order to service customers and perform daily tasks involving web-based mail processing tools and software, 
+              train employees on system software and technology, manage business accounts under SOX compliance standards, and exist as the local subject matter expert on all of the above. 
+            </p>
           </ul>
-          <li>test new text</li>
         </div>
     </section>
 </template>
