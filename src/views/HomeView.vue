@@ -21,8 +21,9 @@ export default {
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 8rem;
   color: #2c3e50;
 }
 
