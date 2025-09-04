@@ -2,7 +2,7 @@
   <section class="home">
     <div class="intro">
       <h1>Hi, I'm Ricardo Rios</h1>
-      <p>Aspiring Front-End Developer passionate about Vue, Java, and Python.</p>
+      <p>Aspiring full-stack developer passionate about Vue, Java, and Python</p>
       <router-link to="/about" class="btn">Learn more about me</router-link>
     </div>
   </section>

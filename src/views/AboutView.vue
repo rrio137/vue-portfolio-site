@@ -39,7 +39,7 @@ export default {
     padding: 2rem 3rem;
     /* background: #a88080; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #1a1919;
+    color: white;
 }
 
 .about h2 {
@@ -48,7 +48,7 @@ export default {
     color: #764ba2;
 }
 .about-card {
-    background-color: #4688a7;
+    background-color: #2c3e50;
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -66,7 +66,7 @@ export default {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #4ba261;
+    border: 3px solid #2c3e50;
     margin-bottom: 1rem;
 }
 </style>
