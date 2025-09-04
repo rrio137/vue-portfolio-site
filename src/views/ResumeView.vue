@@ -34,6 +34,7 @@
           <h3>Work Experience</h3>
           <ul>
             <li>Sales and Services Clerk | United States Post Office | Marysville, WA (May 2016 - November 2023)</li>
+            <li>test new text</li>
           </ul>
         </div>
     </section>
