@@ -105,4 +105,8 @@ export default {
 .download-btn:hover {
   background-color: #5c3c86;
 }
+
+.job-description {
+  font-size: 1
+}
 </style>
