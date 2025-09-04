@@ -17,7 +17,7 @@ export default {
 <style scoped>
 .home {
   height: 100vh;
-  backround-image: url('@/assets/Rainier20200906.jpg');
+  background-image: url('@/assets/Rainier20200906.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
