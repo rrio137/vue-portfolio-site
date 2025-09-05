@@ -44,7 +44,7 @@
         </div>
 
         <h2>Game Demonstration</h2>
-        <div class="project">
+        <div class="project-section">
           <h3>Tic-Tac-Toe (Vue Demo)</h3>
           <TicTacToe />
         </div>
