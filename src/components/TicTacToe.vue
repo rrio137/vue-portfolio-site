@@ -1,18 +1,20 @@
 <template>
   <div class="tic-tac-toe">
-    <h2>Tic-Tac-Toe</h2>
+    <div class="status">{{ statusMessage }}</div>
+
     <div class="board">
-      <div 
-        v-for="(cell, index) in board" 
-        :key="index" 
+      <div
+        v-for="(cell, index) in board"
+        :key="index"
         class="cell"
+        :class="{ win: winningCombination.includes(index) }"
         @click="makeMove(index)"
       >
         {{ cell }}
       </div>
     </div>
-    <p v-if="winner">{{ winnerMessage }}</p>
-    <button @click="resetGame">Restart</button>
+
+    <button class="reset-btn" @click="resetGame">Reset Game</button>
   </div>
 </template>
 
@@ -23,27 +25,24 @@ export default {
     return {
       board: Array(9).fill(""),
       currentPlayer: "X",
-      winner: null
+      winner: null,
+      winningCombination: [],
     };
   },
   computed: {
-    winnerMessage() {
-      return this.winner === "Draw"
-        ? "It's a draw!"
-        : `Player ${this.winner} wins!`;
-    }
+    statusMessage() {
+      if (this.winner) return `Player ${this.winner} wins!`;
+      if (!this.board.includes("")) return "It's a tie!";
+      return `Player ${this.currentPlayer}'s turn`;
+    },
   },
   methods: {
     makeMove(index) {
-      if (!this.board[index] && !this.winner) {
-        this.board[index] = this.currentPlayer;
-        if (this.checkWinner()) {
-          this.winner = this.currentPlayer;
-        } else if (this.board.every(cell => cell)) {
-          this.winner = "Draw";
-        } else {
-          this.currentPlayer = this.currentPlayer === "X" ? "O" : "X";
-        }
+      if (this.board[index] || this.winner) return;
+      this.$set(this.board, index, this.currentPlayer);
+      this.checkWinner();
+      if (!this.winner) {
+        this.currentPlayer = this.currentPlayer === "X" ? "O" : "X";
       }
     },
     checkWinner() {
@@ -55,22 +54,28 @@ export default {
         [1, 4, 7],
         [2, 5, 8],
         [0, 4, 8],
-        [2, 4, 6]
+        [2, 4, 6],
       ];
-      return combos.some(([a, b, c]) => {
-        return (
+      for (const combo of combos) {
+        const [a, b, c] = combo;
+        if (
           this.board[a] &&
           this.board[a] === this.board[b] &&
           this.board[a] === this.board[c]
-        );
-      });
+        ) {
+          this.winner = this.board[a];
+          this.winningCombination = combo;
+          return;
+        }
+      }
     },
     resetGame() {
       this.board = Array(9).fill("");
       this.currentPlayer = "X";
       this.winner = null;
-    }
-  }
+      this.winningCombination = [];
+    },
+  },
 };
 </script>
 
@@ -81,6 +86,13 @@ export default {
   align-items: center;
   justify-content: center;
   margin: 2rem auto;
+}
+
+.status {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #764ba2;
 }
 
 .board {
@@ -114,15 +126,12 @@ export default {
 }
 
 @keyframes glow {
-  from { box-shadow: 0 0 5px #4ba261; }
-  to { box-shadow: 0 0 20px #4ba261; }
-}
-
-.status {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #764ba2;
+  from {
+    box-shadow: 0 0 5px #4ba261;
+  }
+  to {
+    box-shadow: 0 0 20px #4ba261;
+  }
 }
 
 .reset-btn {
@@ -139,19 +148,5 @@ export default {
 
 .reset-btn:hover {
   background-color: #5c3c86;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  border: none;
-  background: #764ba2;
-  color: #fff;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #5c3c86;
 }
 </style>
