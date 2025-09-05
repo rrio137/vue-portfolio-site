@@ -42,12 +42,21 @@
           <h3>Vue Project Personal Portfolio</h3>
           <p>This website itself is a project I've built myself using a Vue front-end to get some practice now that I'm finished at WGU! Thanks for visiting.</p>
         </div>
+
+        <h2>Game Demonstration</h2>
+        <div class="project">
+          <h3>Tic-Tac-Toe (Vue Demo)</h3>
+          <TicTacToe />
+        </div>
     </section>
 </template>
 
 <script>
+import TicTacToe from "@/TicTacToe.vue";
+
 export default {
     name: 'ProjectsView',
+    components: { TicTacToe }
 };
 </script>
 
