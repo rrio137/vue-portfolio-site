@@ -76,32 +76,69 @@ export default {
 
 <style scoped>
 .tic-tac-toe {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 2rem auto;
 }
 
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  gap: 5px;
-  justify-content: center;
-  margin: 1rem 0;
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
 }
 
 .cell {
-  width: 100px;
-  height: 100px;
-  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #333;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
   cursor: pointer;
-  background: #f0f0f0;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .cell:hover {
-  background: #ddd;
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.cell.win {
+  background-color: #4ba261;
+  color: #fff;
+  animation: glow 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 5px #4ba261; }
+  to { box-shadow: 0 0 20px #4ba261; }
+}
+
+.status {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #764ba2;
+}
+
+.reset-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #764ba2;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: #5c3c86;
 }
 
 button {
