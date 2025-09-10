@@ -36,6 +36,13 @@
           <p>Using an open source Excel file containing 10,000 rows of bird migration data, I employed Pandas to read and convert the data into a CSV file and employed data preprocessing techniques such as one-hot encoding, binary encoding, and cleaning to generate a working dataset. I built a Random Forest Regressor model to determine the extent to which the selected features in the dataset could accurately predict successful bird migration. After testing and printing the results of the model, I employed machine learning optimization techniques to see if success could be fine-tuned.</p>
           <p>Link: <a href="https://gitlab.com/wgu-gitlab-environment/student-repos/rrio137/d683-advanced-ai-and-ml/-/tree/Working_Branch?ref_type=heads" target="_blank" rel="noopener noreferrer">GitLab Repository</a></p>
         </div>
+
+        <h2>C# Projects</h2>
+        <div class="project-section">
+          <h3>Tic Tac Toe Game - Two Difficulty Settings</h3>
+          <p>For some practice with C# logic and syntax I built this Tic Tac Toe game which has two difficulty settings, and generates a list of bits corresponding to the entries in the game. I hope to develop this into something more in the future!</p>
+          <p>Link: <a href="https://github.com/rrio137/TicTacToeApp/tree/master" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
+        </div>
         
         <h2>Other Stuff</h2>
         <div class="project-section">
