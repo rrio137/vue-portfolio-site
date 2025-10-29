@@ -53,7 +53,7 @@
         <div class="project-section">
           <h3>Koine Greek Language Learning App</h3>
           <p>I took a lot of Biblical Greek in my undergrad and graduate degree programs, and I am passionate about continuing to learn this written language. I created this app to help others begin to learn it as well. I hope to offer it for use to my church when it moves into further stages of development. I hope also to deploy it to mobile app stores in the future. The app is written using Typescript and React-Native.</p>
-          <p>Link: <a href="https://github.com/rrio137/koine-greek-app.git" target="_blank" rel="noopener noreferrer">GitHum Repository</a></p>
+          <p>Link: <a href="https://github.com/rrio137/koine-greek-app.git" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
         </div>
 
         <h2>Game Demonstration</h2>
